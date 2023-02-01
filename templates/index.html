@@ -1,0 +1,52 @@
+{% include "top.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+<title>Cab</title>
+<script>
+</script>
+</head>
+
+<body>
+  {% include "header.html" %}
+  <div class="home-main">
+    <div class="block1">
+      <div class="row">
+        <form data-role="validator" method="POST" class="cell-lg-5 cell-sm-5 cell-md-5">
+            <div>
+              <label>Name</label>
+              <input type="text" name="name" data-validate="required">
+              <span class="invalid_feedback">
+                Name can not be blank
+              </span>
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="number" name="phone" data-validate="required length=10">
+              <span class="invalid_feedback">
+                Please Enter 10 digit long phone
+              </span>
+            </div>
+            <div>
+              <label>Pickup Location</label>
+              <input type="text" name="phone" data-validate="required">
+              <span class="invalid_feedback">
+                Address can not be blank
+              </span>
+            </div>
+            <div>
+              <label>Drop Location</label>
+              <input type="text" name="phone" data-validate="required">
+              <span class="invalid_feedback">
+                Address can not be blank
+              </span>
+            </div>
+          <button class="button primary">Submit</button>
+        </form>
+        <div class="cell-lg-5 cell-sm-5 cell-md-5 tile">
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "footer.html" %}
+  {% endblock %}
+  {% include "bottom.html" %}

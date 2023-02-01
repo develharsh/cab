@@ -1,0 +1,52 @@
+.block1 > .row {
+  /*   background: purple; */
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.block1 > .row > form {
+  /*     background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+  padding: 1em;
+  gap: 1em;
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+.block1 > .row > form > button {
+  width: 18em;
+  border-radius: 5px;
+}
+.block1 > .row > .tile {
+  min-height: 10em;
+  min-width: 1em;
+  background: purple;
+}
+
+/* tab */
+@media (min-width: 40rem) {
+  .block1 > .row > form {
+    margin: 1em 0 1em 1em;
+    padding: 3em;
+  }
+  .block1 > .row > .tile {
+    margin: 1em 1em 1em 0;
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+/*lap */
+@media (min-width: 80rem) {
+  .block1 > .row > form {
+    margin: 1em 0 1em 1em;
+    padding: 3em;
+  }
+  .block1 > .row > .tile {
+    margin: 1em 1em 1em 0;
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  }
+}
