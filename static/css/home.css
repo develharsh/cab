@@ -19,9 +19,14 @@
   border-radius: 5px;
 }
 .block1 > .row > .tile {
-  min-height: 10em;
-  min-width: 1em;
-  background: purple;
+  /*   background: purple; */
+  background-image: url("../images/Banner-2.avif");
+  color: red;
+/*     width: 10em; */
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* tab */
@@ -31,10 +36,12 @@
     padding: 3em;
   }
   .block1 > .row > .tile {
+    height: auto;
     margin: 1em 1em 1em 0;
     -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    background-position:inherit;
   }
 }
 /*lap */
@@ -44,9 +51,11 @@
     padding: 3em;
   }
   .block1 > .row > .tile {
+    height: auto;
     margin: 1em 1em 1em 0;
     -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    background-position: center;
   }
 }
